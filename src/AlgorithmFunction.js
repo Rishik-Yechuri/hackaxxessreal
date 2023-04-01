@@ -37,6 +37,13 @@ function newTasks() {
             if (j == 3) {  
                 outputArr[i] = connectedArr[k];
             }
+
+            for(let l = 0; l < outputArr.length; l++) {
+                if(outputArr[i] == outputArr[l] && i!=l) {
+                    i--;
+                }
+            }
+            
         }
 
         console.log(outputArr);
