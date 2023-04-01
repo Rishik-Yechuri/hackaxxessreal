@@ -1,0 +1,45 @@
+:root {
+    --topDiv-padding: 1rem 2rem;
+    --backButton-font-size: 1.25rem;
+    --tasksText-font-size: 1rem;
+    --brandName-font-size: 1.5rem;
+}
+
+#topDiv {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: var(--topDiv-padding);
+}
+
+#backButton {
+    border: none;
+    background-color: transparent;
+    font-size: var(--backButton-font-size);
+    cursor: pointer;
+}
+
+#tasksText {
+    margin-right: 0.5rem;
+    font-size: var(--tasksText-font-size);
+}
+
+#brandName {
+    font-size: var(--brandName-font-size);
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    :root {
+        --topDiv-padding: 0.5rem 1rem;
+        --backButton-font-size: 1rem;
+        --tasksText-font-size: 0.8rem;
+        --brandName-font-size: 1.25rem;
+    }
+}

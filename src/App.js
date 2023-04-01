@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {initializeApp} from "firebase/app";
 import {getAnalytics} from "firebase/analytics";
+import TaskScreen from "./TaskScreen";
 // TODO: Add SDKs for Firebase products that you want to use
 function App() {
     // Import the functions you need from the SDKs you need
@@ -24,7 +25,7 @@ function App() {
     const analytics = getAnalytics(app);
     return (
         <div className="App">
-        <h1>Sup mate</h1>
+<TaskScreen/>
         </div>
     );
 }
