@@ -4,7 +4,11 @@
     --tasksText-font-size: 1rem;
     --brandName-font-size: 1.5rem;
 }
-
+.App2{
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: red;
+}
 #topDiv {
     display: flex;
     align-items: center;
@@ -12,6 +16,11 @@
     justify-content: space-between;
     background-color: #f1f1f1;
     padding: var(--topDiv-padding);
+}
+
+#leftSide {
+    display: flex;
+    align-items: center;
 }
 
 #backButton {
@@ -22,14 +31,22 @@
 }
 
 #tasksText {
-    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     font-size: var(--tasksText-font-size);
+    text-align: left;
 }
-
+#otherStuff{
+    max-width: 30em;
+    min-height: 10em;
+    margin-left: 3em;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
 #brandName {
     font-size: var(--brandName-font-size);
     font-weight: bold;
-    text-align: center;
     flex: 1;
     text-align: center;
 }

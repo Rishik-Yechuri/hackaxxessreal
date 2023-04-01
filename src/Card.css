@@ -1,0 +1,21 @@
+.card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1em;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+.card input[type='checkbox'] {
+    margin-right: 1rem;
+}
+
+.card input[type='text'] {
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
