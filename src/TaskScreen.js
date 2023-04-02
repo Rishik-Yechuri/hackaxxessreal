@@ -36,15 +36,9 @@ function TaskScreen() {
             <div id="otherStuff">
 
                 <CardContainer data={data}  openDialog={openDialog} />
-
-            <div id="otherStuff">
-                <CardsContainer data={data} />
             </div>
         </div>
-
-
-
-    );
+    )
 }
 
 export default TaskScreen;

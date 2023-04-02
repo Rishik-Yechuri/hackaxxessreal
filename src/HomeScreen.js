@@ -15,7 +15,7 @@ function HomeScreen() {
                 homes.
 
 
-                <button className="sign-up" onClick={clickMe}>Sign Up Now!</button>
+                <button className="sign-up" >Sign Up Now!</button>
             </div>
 
         </div>
