@@ -17,7 +17,7 @@ function HomeScreen({toggleComponent}) {
                 homes.
 
 
-                <button className="sign-up" onClick={buttonClicked} >Next</button>
+                <button className="sign-up" onClick={buttonClicked} >Start your journey</button>
             </div>
 
         </div>
