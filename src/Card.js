@@ -16,11 +16,8 @@ const Card = ({ initialText }) => {
                 checked={isChecked}
                 onChange={handleCheckboxChange}
             />
-            <input
-                type="text"
-                value={text}
-                onChange={(e) => setText(e.target.value)}
-            />
+            <span className="card-text">{text}</span> {/* Update this line */}
+
         </div>
     );
 };

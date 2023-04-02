@@ -38,11 +38,11 @@
 #otherStuff{
     max-width: 30em;
     min-height: 10em;
-    margin-left: 3em;
+    margin-left: 4em;
     background-color: greenyellow;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
 }
 #brandName {
     font-size: var(--brandName-font-size);
@@ -58,5 +58,8 @@
         --backButton-font-size: 1rem;
         --tasksText-font-size: 0.8rem;
         --brandName-font-size: 1.25rem;
+    }
+    #otherStuff{
+        margin-left: 3em;
     }
 }

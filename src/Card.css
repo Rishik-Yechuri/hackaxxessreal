@@ -5,16 +5,15 @@
     border-radius: 1em;
     margin-bottom: 1rem;
     width: 100%;
-    max-width: 300px;
     box-sizing: border-box;
-    background-color: antiquewhite;
+    background-color: pink;
 }
 
 .card input[type='checkbox'] {
     margin-right: 1rem;
 }
 
-.card input[type='text'] {
+.card-text {
     flex: 1;
     width: 100%;
     box-sizing: border-box;
