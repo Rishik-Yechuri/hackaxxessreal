@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import './Card.css';
+import DialogBox from './DialogBox';
 
-const Card = ({ initialText }) => {
+const Card = ({initialText, openDialog}) => {
     const [isChecked, setIsChecked] = useState(false);
     const [text, setText] = useState(initialText);
 
+
+    useEffect(() => {
+        if (isChecked) {
+            openDialog();
+        }
+    }, [isChecked]);
     const handleCheckboxChange = () => {
+        //openDialog();
         setIsChecked(!isChecked);
         let meditationArr = ["Do 5 mins of deep breathing exercises", "Color or draw mindfully for at least 15 minutes", "Listen to a new song on Spotify to lift your mood", "Take a nap for at least one hour today", "Do 10 minutes of yoga in the morning or before sleeping"];
         let cardioArr = ["Go on a walk in an nearby park", "Run one mile today", "Try a new dance workout on YouTube", "Play any sport outside for at least 30 minutes", "Stretch for 10 minutes before bed"];
@@ -28,7 +36,7 @@ const Card = ({ initialText }) => {
             alert("NOT IN, PANIC NOW PANIC NOW")
             // The text is not in any of the arrays
         }
-        
+
     };
 
     return (

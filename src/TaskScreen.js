@@ -1,14 +1,26 @@
 import './TaskScreen.css';
-import CardsContainer from './CardContainer';
+import CardContainer from './CardContainer';
 
 import {initializeApp} from "firebase/app";
 import {getAnalytics} from "firebase/analytics";
+import {useState} from "react";
+import DialogBox from "./DialogBox";
+
 // TODO: Add SDKs for Firebase products that you want to use
 function TaskScreen() {
+    const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+    const openDialog = () => {
+        setIsDialogOpen(true);
+    };
+    const closeDialog = () => {
+        setIsDialogOpen(false);
+    };
     const data = ['Task 1', 'Task 2', 'Task 3'];
 
     return (
         <div className="App2">
+            <DialogBox isOpen={isDialogOpen} closeDialog={closeDialog} /* other props */ />
             <div id="topDiv">
                 <div id="leftSide">
                     <button id="backButton" onClick="goBack()">←</button>
@@ -20,7 +32,7 @@ function TaskScreen() {
 {/*
                 <div id="taskGroup"></div>
 */}
-                <CardsContainer data={data} />
+                <CardContainer data={data}  openDialog={openDialog} />
 
             </div>
         </div>
