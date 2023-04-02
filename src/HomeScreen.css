@@ -1,0 +1,93 @@
+.Home {
+    font-family: 'Calibri';
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.login {
+    position: absolute;
+    display: flex;
+    right: 30px;
+    top: 10px;
+  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+  
+    color: #74ABB7;
+    background-color: #FFFFFF;
+    border: none;
+}
+  
+.Header {
+    display: flex;
+    background: #74ABB7;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+
+    margin-top: 60px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 0.5em;
+
+    border: 1px solid #FFFFFF;
+}
+
+.Box {
+    display: flex;
+    background: #74ABB7;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 20px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.sign-up {
+    display: flex;
+    background: #7C72A2;
+    color: #FFFFFF;
+    border: none;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+
+    margin-top: 30px;
+    border-radius: 25px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.sign-up:hover {
+    background: #c800ff;
+}
+
+@media (max-width: 600px)
+{
+  .Box {
+    width: 90%;
+  }
+}

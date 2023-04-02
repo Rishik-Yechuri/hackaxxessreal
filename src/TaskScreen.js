@@ -16,12 +16,9 @@ function TaskScreen() {
                 </div>
                 <span id="brandName">Healthify</span>
             </div>
-            <div id="otherStuff">
-{/*
-                <div id="taskGroup"></div>
-*/}
-                <CardsContainer data={data} />
 
+            <div id="otherStuff">
+                <CardsContainer data={data} />
             </div>
         </div>
 
