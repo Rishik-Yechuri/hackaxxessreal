@@ -28,6 +28,7 @@ const Card = ({ initialText }) => {
             alert("NOT IN, PANIC NOW PANIC NOW")
             // The text is not in any of the arrays
         }
+        
     };
 
     return (
