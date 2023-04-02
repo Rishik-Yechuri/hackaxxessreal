@@ -4,8 +4,15 @@ import {initializeApp} from "firebase/app";
 import {getAnalytics} from "firebase/analytics";
 import TaskScreen from "./TaskScreen";
 import HomeScreen from "./HomeScreen";
+import {useState} from "react";
 // TODO: Add SDKs for Firebase products that you want to use
 function App() {
+    const [showComponentOne, setShowComponentOne] = useState(true);
+    const [showComponentTwo, setShowComponentTwo] = useState(false);
+    const toggleComponent = () => {
+        setShowComponentTwo(!showComponentTwo);
+        setShowComponentOne(!showComponentOne);
+    };
     // Import the functions you need from the SDKs you need
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -26,7 +33,8 @@ function App() {
     const analytics = getAnalytics(app);
     return (
         <div className="App">
-            <HomeScreen/>
+            {showComponentTwo ? <TaskScreen /> : <HomeScreen toggleComponent={toggleComponent}/>}
+
         </div>
     );
 }

@@ -1,11 +1,13 @@
 import './HomeScreen.css';
 
 
-function HomeScreen() {
+function HomeScreen({toggleComponent}) {
+    function buttonClicked(){
+        toggleComponent();
+    }
     return (
         <div className="Home">
 
-            <button className="login">Login</button>
 
             <div className="Header"><h1>Healthify</h1></div>
 
@@ -15,7 +17,7 @@ function HomeScreen() {
                 homes.
 
 
-                <button className="sign-up" >Sign Up Now!</button>
+                <button className="sign-up" onClick={buttonClicked} >Next</button>
             </div>
 
         </div>
