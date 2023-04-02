@@ -9,18 +9,20 @@ import DialogBox from "./DialogBox";
 // TODO: Add SDKs for Firebase products that you want to use
 function TaskScreen() {
     const [isDialogOpen, setIsDialogOpen] = useState(false);
+    const [groupNum, setGroupNum] = useState(false);
 
-    const openDialog = () => {
+    const openDialog = (groupNum) => {
         setIsDialogOpen(true);
+        setGroupNum(groupNum);
     };
     const closeDialog = () => {
         setIsDialogOpen(false);
     };
-    const data = ['Task 1', 'Task 2', 'Task 3'];
+    const data = ['Do 5 mins of deep breathing exercises', 'Task 2', 'Task 3'];
 
     return (
         <div className="App2">
-            <DialogBox isOpen={isDialogOpen} closeDialog={closeDialog} /* other props */ />
+            <DialogBox isOpen={isDialogOpen} closeDialog={closeDialog} groupNum={groupNum} /* other props */ />
             <div id="topDiv">
                 <div id="leftSide">
                     <button id="backButton" onClick="goBack()">←</button>
