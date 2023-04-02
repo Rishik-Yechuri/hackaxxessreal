@@ -3,6 +3,8 @@ import CardContainer from './CardContainer';
 
 import {initializeApp} from "firebase/app";
 import {getAnalytics} from "firebase/analytics";
+import { NewTasks } from './NewTasks.js';
+
 import {useState} from "react";
 import DialogBox from "./DialogBox";
 
@@ -18,8 +20,9 @@ function TaskScreen() {
     const closeDialog = () => {
         setIsDialogOpen(false);
     };
-    const data = ['Do 5 mins of deep breathing exercises', 'Task 2', 'Task 3'];
-
+    var data;// = ['Do 5 mins of deep breathing exercises', 'Task 2', 'Task 3'];
+    data = NewTasks(JSON.parse(localStorage.getItem('averages')) || []);
+   // alert('data:' + JSON.stringify(data));
     return (
         <div className="App2">
             <DialogBox isOpen={isDialogOpen} closeDialog={closeDialog} groupNum={groupNum} /* other props */ />

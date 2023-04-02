@@ -6,7 +6,7 @@ import {click} from "@testing-library/user-event/dist/click";
 const Card = ({initialText, openDialog}) => {
     const [isChecked, setIsChecked] = useState(false);
     const [text, setText] = useState(initialText);
-
+    //alert('inittext:' + text);
 
     useEffect(() => {
         if (isChecked) {
@@ -22,7 +22,7 @@ const Card = ({initialText, openDialog}) => {
             let journalingArr = ["Write down 3 good things you've achieved yesterday", "Write down your current thoughts on a sheet of paper", "Create a to-do list for today", "Create a schedule for this week and include important activities/events to stay organized", "Make a list of things you are thankful for"];
             let connectedArr = ["Call/text an old friend that you haven't been in contact with recently", "Call your parents/guardians to tell them how much you appreicate them!", "Check-in with a friend and ask how they're doing", "Start small talk with a neighbor/stranger", "Make plans to go out with a friend"];
             var inGroup = 0;
-            alert('clicked:' + text);
+            //alert('clicked:' + text);
             if (meditationArr.includes(text)) {
                 // The text is in meditationArr
                 inGroup = 1;
@@ -36,10 +36,10 @@ const Card = ({initialText, openDialog}) => {
                 // The text is in connectedArr
                 inGroup = 4;
             } else {
-                alert("NOT IN, PANIC NOW PANIC NOW")
+                //alert("NOT IN, PANIC NOW PANIC NOW")
                 // The text is not in any of the arrays
             }
-            alert('group:' + inGroup);
+            //alert('group:' + inGroup);
             openDialog(inGroup);
         }
 
