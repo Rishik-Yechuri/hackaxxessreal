@@ -17,6 +17,11 @@
     font-weight: 400;
     font-size: 25px;
 
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+  
     color: #74ABB7;
     background-color: #FFFFFF;
     border: none;
@@ -90,4 +95,7 @@
     .Box {
         width: 90%;
     }
+  .Box {
+    width: 90%;
+  }
 }
