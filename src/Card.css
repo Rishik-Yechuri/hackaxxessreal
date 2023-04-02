@@ -6,7 +6,6 @@
     margin-bottom: 1rem;
     width: 100%;
     box-sizing: border-box;
-    background-color: pink;
 }
 
 .card input[type='checkbox'] {
@@ -17,6 +16,7 @@
     flex: 1;
     width: 100%;
     box-sizing: border-box;
+    color: whitesmoke;
 }
 .checkbox-container {
     display: inline-block;

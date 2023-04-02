@@ -7,7 +7,7 @@
 .App2{
     min-height: 100vh;
     max-width: 100%;
-    background-color: red;
+    background-color: #74ABB7;
 }
 #topDiv {
     display: flex;
@@ -16,6 +16,7 @@
     justify-content: space-between;
     background-color: #f1f1f1;
     padding: var(--topDiv-padding);
+    margin-bottom: 4em;
 }
 
 #leftSide {
@@ -39,7 +40,7 @@
     max-width: 30em;
     min-height: 10em;
     margin-left: 4em;
-    background-color: greenyellow;
+    background-color: #74ABB7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
