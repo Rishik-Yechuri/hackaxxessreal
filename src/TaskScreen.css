@@ -52,7 +52,7 @@
 }
 
 /* Responsive design */
-@media (max-width: 480px) {
+@media (max-width: 30em) {
     :root {
         --topDiv-padding: 0.5rem 1rem;
         --backButton-font-size: 1rem;
@@ -60,6 +60,7 @@
         --brandName-font-size: 1.25rem;
     }
     #otherStuff{
-        margin-left: 3em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
     }
 }
