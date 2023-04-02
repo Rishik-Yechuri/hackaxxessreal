@@ -33,6 +33,7 @@ function TaskScreen() {
                 </div>
                 <span id="brandName">Healthify</span>
             </div>
+            <div id={'thinLine'}></div>
             <div id="otherStuff">
 
                 <CardContainer data={data}  openDialog={openDialog} />
