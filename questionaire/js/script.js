@@ -319,45 +319,9 @@ const showAllQuestionAndAnswer = () => {
 
 const showPersonalities = (introvert, extrovert) => {
   if (introvert > extrovert) {
-    //show image
-
-    document.getElementById("trait-title").innerText = "You have anxiety";
-
-    //append personality traits
-    let element = `<li>Being Around Lots of People Drains Your Energy</li>
-    <li>You Enjoy Solitude</li>
-    <li>You Have a Small Group of Close Friends</li>
-    <li>
-      People Often Describe You as Quiet and May Find It Difficult to
-      Get to Know You
-    </li>
-
-    <li>
-      Too Much Stimulation Leaves You Feeling Distracted and Unfocused
-    </li>
-    <li>You Are Very Self-Aware</li>
-    <li>You Like to Learn by Watching</li>
-    <li>You Are Drawn to Jobs That Involve Independence</li>`;
-    document.getElementById("personalities").innerHTML += element;
+ 
   } else {
-    //show image
-    document.getElementById("trait-title").innerText = "You are an dEPRESSED - PUT CHECKLIST HERE";
-
-    //append personality traits
-    let element = `<li>You enjoy being at the center of attention.</li>
-    <li>You enjoy working with groups of people.</li>
-    <li>You feel isolated when you spend much time alone.</li>
-    <li>
-      You prefer to communicate by talking as opposed to other communication means.
-    </li>
-
-    <li>
-      You tend to act first before thinking
-    </li>
-    <li>You like to look to others and outside sources for ideas and inspiration.</li>
-    <li>You like to talk about your thoughs and feelings.</li>
-    <li>You have numerous, broad interests.</li>`;
-    document.getElementById("personalities").innerHTML += element;
+    
   }
 
   //show test result
